@@ -1,0 +1,15 @@
+.homeContainer{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "content";
+    
+
+    .header{
+        grid-area: header;
+    }
+
+    .content{
+        grid-area: content;
+    }
+}

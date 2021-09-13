@@ -1,0 +1,44 @@
+.postsContainer{
+    width: 75%;
+    height: 89vh;
+    margin: auto;
+    margin-top: 1vh;
+    overflow-y: scroll;
+    background-color: #ccc;
+    
+    .post{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 5px;
+
+        .interations{
+            display: flex;
+            justify-content: space-between;
+
+            p{
+                margin: 0 10px 0 10px;
+                cursor: pointer;
+            }
+
+            .like{
+                color: red;
+            }
+        }
+    }
+}
+
+.postsContainer::-webkit-scrollbar{
+    width: 10px;
+}
+
+.postsContainer::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+}
+
+.postsContainer::-webkit-scrollbar-thumb {
+    background-color: #ccc;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid black;  /* creates padding around scroll thumb */
+}
